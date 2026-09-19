@@ -1,0 +1,12 @@
+# Dependencies and build output
+node_modules/
+dist/
+
+# Local state (the real config lives in ~/Library/Application Support/Claude Buddy/)
+config.json
+state.json
+*.log
+*.jsonl
+
+# OS
+.DS_Store

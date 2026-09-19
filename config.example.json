@@ -1,0 +1,15 @@
+{
+  "vaultPath": "",
+  "dailyNotesFolder": "Daily Notes",
+  "dailyNoteNudgeHour": 18,
+  "calendarIcsUrl": "",
+  "calendarLeadMinutes": 5,
+  "calendarRefreshMinutes": 5,
+  "stretchAfterMinutes": 50,
+  "coffeeAfterMinutes": 180,
+  "quietHours": [],
+  "hotkey": "Control+Alt+C",
+  "claudeDoneOnlyWhenAway": true,
+  "claudeAwaySeconds": 20,
+  "fridayWrapHour": 18
+}

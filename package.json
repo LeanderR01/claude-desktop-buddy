@@ -1,0 +1,73 @@
+{
+  "name": "claude-buddy",
+  "productName": "Claude Buddy",
+  "version": "1.9.0",
+  "description": "A little pixel Claude that wanders across your macOS screen: random visits, coworking, Claude Code hooks, calendar and break reminders",
+  "main": "main.js",
+  "author": "Leander Rappmann",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "icons": "node scripts/make-icons.js",
+    "preview": "node scripts/preview.js",
+    "dist": "electron-builder --mac",
+    "dist:local": "electron-builder --mac dir --arm64"
+  },
+  "devDependencies": {
+    "electron": "^37.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "com.leanderrappmann.claudebuddy",
+    "productName": "Claude Buddy",
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**",
+      "assets/**",
+      "lib/**"
+    ],
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "universal"
+          ]
+        }
+      ],
+      "icon": "build/icon.icns",
+      "category": "public.app-category.entertainment",
+      "identity": null,
+      "extendInfo": {
+        "LSUIElement": true
+      }
+    },
+    "dmg": {
+      "title": "Claude Buddy",
+      "contents": [
+        {
+          "x": 130,
+          "y": 160,
+          "type": "file"
+        },
+        {
+          "x": 410,
+          "y": 160,
+          "type": "link",
+          "path": "/Applications"
+        },
+        {
+          "x": 270,
+          "y": 300,
+          "type": "file",
+          "path": "build/READ ME.txt"
+        }
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LeanderR01/claude-desktop-buddy.git"
+  }
+}

@@ -1,0 +1,9 @@
+Claude Buddy
+
+1. Drag "Claude Buddy" into Applications.
+2. First launch: macOS blocks unsigned apps. Open System Settings > Privacy & Security, scroll down, click "Open Anyway". Only needed once.
+3. The buddy lives in the menu bar (small orange face). Menu: Summon, Pause, Quiet for 1 hour, Start at login, Open settings file, Preview events.
+4. Settings: ~/Library/Application Support/Claude Buddy/config.json
+   - calendarIcsUrl: paste the "secret address in iCal format" of your Google calendar
+   - vaultPath, quietHours, hotkey, stretch and break timers
+5. Claude Code integration: see SETUP.md in the repo (one script plus two hook entries in ~/.claude/settings.json).
