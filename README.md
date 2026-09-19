@@ -6,6 +6,22 @@ This is an unofficial hobby project. It is not made by or affiliated with Anthro
 
 **macOS only.** The app relies on macOS-specific window behavior (transparent click-through overlay, menu bar tray, screen geometry handling). There are no Windows or Linux builds.
 
+## Screenshots
+
+Fishing at the bottom of the screen while a second visit passes by:
+
+![Claude Buddy fishing at the screen edge](screenshots/buddy-4.png)
+
+Event visits walk in at cursor height with an icon and a speech bubble:
+
+![Claude Code needs you](screenshots/buddy-1.png)
+
+![Claude Code task done](screenshots/buddy-2.png)
+
+![Daily note reminder](screenshots/buddy-3.png)
+
+(The screenshots show a personalized build with German lines; this repo ships English defaults, all messages are editable in [renderer/config.js](renderer/config.js).)
+
 ## What he does
 
 **Random visits** (every 12 to 25 minutes by default, the first one 40 to 120 seconds after launch):
